@@ -7,4 +7,3 @@ class PontoTuristicoSerializer(serializers.ModelSerializer):
         model = PontoTuristico
         fields = ('id', 'nome', 'descricao', 'endereco')
 
-# ,'aprovado','atracoes','comentarios','avaliacoes','endereco']

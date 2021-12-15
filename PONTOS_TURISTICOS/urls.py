@@ -20,13 +20,16 @@ from core.API.viewsets import PontoTuristicoViewSet
 from atracoes.API.viewsets import AtracaoViewSet
 from enderecos.API.viewsets import EnderecoViewSet
 from comentarios.API.viewsets import ComentarioViewSet
+from avaliacoes.API.viewsets import AvaliacaoViewSet
+
 
 
 router = routers.DefaultRouter()
-router.register(r'pontoturistico', PontoTuristicoViewSet)    
+router.register(r'pontoturistico', PontoTuristicoViewSet, basename='PontoTuristico')    
 router.register(r'atracoes', AtracaoViewSet)    
 router.register(r'enderecos', EnderecoViewSet)    
 router.register(r'comentarios', ComentarioViewSet)    
+router.register(r'avaliacoes', AvaliacaoViewSet)    
 
 
 
